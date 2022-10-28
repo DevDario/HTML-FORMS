@@ -1,0 +1,245 @@
+@mixin warning-text{
+    color:#ff2e2e;
+    margin:3px;
+    font-weight:200;
+}
+
+/*FONT FAMILY*/
+@font-face {
+    font-family: 'chivo';
+    src: url(chivo-regular.ttf);
+}
+
+/*COLOR VARIABLES*/
+$MainBlueColor:#1563f5;
+$HighlightColor:#002679;
+$BorderButonColor:#0144c2;
+
+/*RESET*/
+*{
+    padding: 0; margin: 0; bottom: 0; top: 0; left: 0; right: 0; box-sizing:border-box; font-family:'chivo';
+}
+
+a:visited, a:link{
+    color:$MainBlueColor;
+}
+
+
+.phrase{
+    display:flex;
+    justify-content: center;
+    margin:3rem auto;
+
+    .page-phrase{
+        text-align:center;
+        font-size:36px;
+        color:$MainBlueColor;
+
+        .highlighted-text{
+            color:$HighlightColor;
+        }
+    }
+}
+
+form{
+    /*FORM CONTEINER*/
+    .form-conteiner{
+        display:flex;
+        justify-content: center;
+        flex-direction:column;
+        margin:auto 340px;
+        gap:20px;
+        
+
+    /*ALL FORM ELEMENTS*/
+        input,button{
+            padding:20px 30px;
+            outline:none;
+        }
+
+        input{
+            border:2px solid $HighlightColor;
+            border-radius: 10px;
+        }
+
+        button{
+            border-radius: 10px;
+            border:2px solid $BorderButonColor;
+            background-color:$MainBlueColor;
+            font-size:18px;
+            color:#FFF;
+            cursor:pointer;
+        }
+
+        small{
+            @include warning-text();
+        }
+
+        /*TERMS AND POLICY SECTION*/
+        .terms-and-policy{
+            margin-top: 15px;
+            display:flex;
+            flex-direction:row;
+            gap:10px;
+
+            input[type="checkbox"]{
+                width: 18px;
+            }
+        }
+
+    }
+}
+
+/*MOBILE VERSION*/
+
+@media screen and (max-width:768px) {
+    .phrase{
+        display:flex;
+        justify-content: left;
+        margin:2rem 20px;
+    
+        .page-phrase{
+            text-align:left;
+            font-size:30px;
+            color:$MainBlueColor;
+    
+            .highlighted-text{
+                color:$HighlightColor;
+            }
+        }
+    }
+    
+    form{
+        /*FORM CONTEINER*/
+        .form-conteiner{
+            display:flex;
+            justify-content: left;
+            flex-direction:column;
+            margin:auto 35px;
+            gap:15px;
+            
+    
+        /*ALL FORM ELEMENTS*/
+            input,button{
+                padding:20px 30px;
+                outline:none;
+            }
+    
+            input{
+                border:2px solid $HighlightColor;
+                border-radius: 10px;
+            }
+    
+            button{
+                border-radius: 10px;
+                border:2px solid $BorderButonColor;
+                background-color:$MainBlueColor;
+                font-size:16px;
+                color:#FFF;
+                cursor:pointer;
+            }
+    
+            small{
+                @include warning-text();
+            }
+
+            /*TERMS AND POLICY SECTION*/
+            .terms-and-policy{
+                margin-top: 20px;
+                display:flex;
+                flex-direction:row;
+                gap:10px;
+    
+                input[type="checkbox"]{
+                    width: 18px;
+                }
+
+                p{
+                    color:#242424;
+                }
+
+                .highlighted-text{
+                    color:$HighlightColor;
+                }
+            }
+    
+        }
+    }
+}
+
+/*TABLET VERSION*/
+
+@media screen and (max-width:841px) {
+    .phrase{
+        display:flex;
+        justify-content: left;
+        margin:2rem 20px;
+    
+        .page-phrase{
+            text-align:left;
+            font-size:30px;
+            color:$MainBlueColor;
+    
+            .highlighted-text{
+                color:$HighlightColor;
+            }
+        }
+    }
+    
+    form{
+        /*FORM CONTEINER*/
+        .form-conteiner{
+            display:flex;
+            justify-content: left;
+            flex-direction:column;
+            margin:auto 35px;
+            gap:15px;
+            
+    
+        /*ALL FORM ELEMENTS*/
+            input,button{
+                padding:20px 30px;
+                outline:none;
+            }
+    
+            input{
+                border:2px solid $HighlightColor;
+                border-radius: 10px;
+            }
+    
+            button{
+                border-radius: 10px;
+                border:2px solid $BorderButonColor;
+                background-color:$MainBlueColor;
+                font-size:16px;
+                color:#FFF;
+                cursor:pointer;
+            }
+    
+            small{
+                @include warning-text();
+            }
+
+            /*TERMS AND POLICY SECTION*/
+            .terms-and-policy{
+                margin-top: 20px;
+                display:flex;
+                flex-direction:row;
+                gap:10px;
+    
+                input[type="checkbox"]{
+                    width: 18px;
+                }
+
+                p{
+                    color:#242424;
+                }
+
+                .highlighted-text{
+                    color:$HighlightColor;
+                }
+            }
+    
+        }
+    }
+}

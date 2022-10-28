@@ -1,0 +1,370 @@
+/*COLOR VARIABLES*/
+/*FUNCTIONS*/
+/*RESET*/
+@font-face {
+  font-family: 'Chivo';
+  src: url(chivo-regular.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Chivo',monospace;
+}
+
+a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+/*BODY*/
+body {
+  background: #111;
+  color: #FFF;
+}
+
+/*MAIN-IMAGE SECTION*/
+.main-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem auto 2rem auto;
+}
+
+.main-image .img-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-image .img-box .logo {
+  width: 60px;
+  height: 60px;
+}
+
+/*TEXT UNDER LOGO*/
+.md-text {
+  margin-bottom: 3rem;
+}
+
+.md-text .text {
+  font-size: 34px;
+  text-align: center;
+  font-weight: 400;
+}
+
+/*FORM*/
+form {
+  display: block;
+  margin: 0 auto;
+  /*INPUT*/
+  /*SMALL*/
+  /*BUTTON*/
+  /*ANOTHER WAY TO SIGN IN SECTION*/
+  /*TERMS AND POLICY SECTION*/
+}
+
+form label {
+  margin: 15px 0 15px 32rem;
+  font-weight: 200;
+  color: #999;
+  display: block;
+}
+
+form input {
+  border: 3px solid #333;
+  padding: 8px 100px;
+  border-radius: 10px;
+  color: #242424;
+  font-weight: 300;
+  display: block;
+  margin: 0 auto 2rem auto;
+  text-align: initial;
+}
+
+form button {
+  display: block;
+  margin: 0 auto;
+  border: 3px solid #333;
+  padding: 8px 100px;
+  border-radius: 10px;
+  color: #242424;
+  font-weight: 300;
+  display: block;
+  margin: 0 auto 2rem auto;
+  text-align: initial;
+  color: #FFF;
+  background: #222;
+  cursor: pointer;
+}
+
+form .sign-in-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+form .sign-in-options .conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 30px;
+  /*GOOGLE OPTION*/
+  /*FACEBOOK OPTION*/
+  /*GITHUB OPTION*/
+}
+
+form .sign-in-options .conteiner .google-option {
+  cursor: pointer;
+}
+
+form .sign-in-options .conteiner .google-option .google-logo {
+  width: 44px;
+  height: 44px;
+}
+
+form .sign-in-options .conteiner .google-option p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+form .sign-in-options .conteiner .facebook-option {
+  cursor: pointer;
+}
+
+form .sign-in-options .conteiner .facebook-option .facebook-logo {
+  width: 44px;
+  height: 44px;
+}
+
+form .sign-in-options .conteiner .facebook-option p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto 0 0 -10px;
+}
+
+form .sign-in-options .conteiner .github-option {
+  cursor: pointer;
+}
+
+form .sign-in-options .conteiner .github-option .github-logo {
+  width: 44px;
+  height: 44px;
+}
+
+form .sign-in-options .conteiner .github-option p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto 0 0 -4px;
+}
+
+form .terms-and-policy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 25px auto 20px auto;
+}
+
+form .terms-and-policy .highlighted-text {
+  color: #dbdbdb;
+  cursor: pointer;
+}
+
+/*MOBILE VERSION*/
+@media screen and (max-width: 768px) {
+  /*FUNCTIONS*/
+  /*MAIN-IMAGE SECTION*/
+  .main-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    margin: 2rem 2rem;
+  }
+  .main-image .img-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+  .main-image .img-box .logo {
+    width: 60px;
+    height: 60px;
+  }
+  /*TEXT UNDER LOGO*/
+  .md-text {
+    margin: auto 0 3rem 2rem;
+  }
+  .md-text .text {
+    font-size: 31px;
+    text-align: left;
+    font-weight: 400;
+  }
+  /*FORM*/
+  form {
+    display: block;
+    margin: 0 auto;
+    /*INPUT*/
+    /*SMALL*/
+    /*BUTTON*/
+    /*ANOTHER WAY TO SIGN IN SECTION*/
+    /*TERMS AND POLICY SECTION*/
+  }
+  form label {
+    margin: 15px 0 15px 0;
+    font-weight: 200;
+    color: #999;
+    display: block;
+    margin: 15px 0 15px 2rem;
+  }
+  form input {
+    border: 3px solid #333;
+    padding: 15px 60px;
+    border-radius: 10px;
+    color: #242424;
+    font-weight: 300;
+    display: block;
+    margin: 0 auto 1rem 2rem;
+    text-align: initial;
+  }
+  form button {
+    display: block;
+    border: 3px solid #333;
+    padding: 15px 60px;
+    border-radius: 10px;
+    color: #242424;
+    font-weight: 300;
+    display: block;
+    margin: 0 auto 1rem 2rem;
+    text-align: initial;
+    color: #FFF;
+    background: #222;
+    cursor: pointer;
+  }
+  form .sign-in-options {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    margin-left: 2rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  form .sign-in-options .conteiner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 20px;
+    /*GOOGLE OPTION*/
+    /*FACEBOOK OPTION*/
+    /*GITHUB OPTION*/
+  }
+  form .sign-in-options .conteiner .google-option {
+    cursor: pointer;
+  }
+  form .sign-in-options .conteiner .google-option .google-logo {
+    width: 34px;
+    height: 34px;
+  }
+  form .sign-in-options .conteiner .google-option p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: -5px;
+  }
+  form .sign-in-options .conteiner .facebook-option {
+    cursor: pointer;
+  }
+  form .sign-in-options .conteiner .facebook-option .facebook-logo {
+    width: 34px;
+    height: 34px;
+  }
+  form .sign-in-options .conteiner .facebook-option p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto 0 0 -15px;
+  }
+  form .sign-in-options .conteiner .github-option {
+    cursor: pointer;
+  }
+  form .sign-in-options .conteiner .github-option .github-logo {
+    width: 34px;
+    height: 34px;
+  }
+  form .sign-in-options .conteiner .github-option p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto 0 0 -7px;
+  }
+  form .terms-and-policy {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 25px auto 20px auto;
+  }
+  form .terms-and-policy .highlighted-text {
+    color: #dbdbdb;
+    cursor: pointer;
+  }
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS SHEET-->
+    <link rel="stylesheet" href="index.css">
+    <title>Sign-up</title>
+</head>
+<body>
+    <form action="">
+        <div class="conteiner">
+            <label for="full-name">your name:</label>
+            <input type="text" name="full-name" id="full-name-input" >
+            <small id="textName"></small>
+            <label for="age">your age:</label>
+            <input type="number" name="age" id="age-input" >
+            <small id="textAge"></small>
+            <label for="sex">your sex:</label>
+            <select name="sex" id="select-sex">
+                <option value="none">none</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="prefer not to say">Prefer not to say</option>
+            </select>
+            <small id="textSex"></small>
+            <label for="especiallity">your especiallity:</label>
+            <select name="especiallity" id="select-especiallity">
+                <option value="none">none</option>
+                <option value="Front-End Developer">Front-End Developer</option>
+                <option value="Back-End Developer">Back-End Developer</option>
+                <option value="FullStack Developer">FullStack Developer </option>
+            </select>
+            <small id="textEspeciallity"></small>
+            <label for="experience">your experience</label>
+            <select name="experience" id="select-experience">
+                <option value="none">none</option>
+                <option value="Junior">Junior</option>
+                <option value="Senior">Senior</option>
+                <option value="Master">Master</option>
+            </select>
+            <small id="textExperience"></small>
+            <small id="textAllOptions"></small>
+            <button type="submit">Sign up</button>
+        </div>
+    </form>
+
+
+    <!--JS SCRIPT-->
+    <script src="index.js"></script>
+</body>
+</html>

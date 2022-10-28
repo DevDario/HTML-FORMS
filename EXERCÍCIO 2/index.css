@@ -1,0 +1,268 @@
+/*FONT FAMILY*/
+@font-face {
+  font-family: 'chivo';
+  src: url(chivo-regular.ttf);
+}
+
+/*COLOR VARIABLES*/
+/*RESET*/
+* {
+  padding: 0;
+  margin: 0;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'chivo';
+}
+
+a:visited, a:link {
+  color: #1563f5;
+}
+
+.phrase {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 3rem auto;
+}
+
+.phrase .page-phrase {
+  text-align: center;
+  font-size: 36px;
+  color: #1563f5;
+}
+
+.phrase .page-phrase .highlighted-text {
+  color: #002679;
+}
+
+form {
+  /*FORM CONTEINER*/
+}
+
+form .form-conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto 340px;
+  gap: 20px;
+  /*ALL FORM ELEMENTS*/
+  /*TERMS AND POLICY SECTION*/
+}
+
+form .form-conteiner input, form .form-conteiner button {
+  padding: 20px 30px;
+  outline: none;
+}
+
+form .form-conteiner input {
+  border: 2px solid #002679;
+  border-radius: 10px;
+}
+
+form .form-conteiner button {
+  border-radius: 10px;
+  border: 2px solid #0144c2;
+  background-color: #1563f5;
+  font-size: 18px;
+  color: #FFF;
+  cursor: pointer;
+}
+
+form .form-conteiner small {
+  color: #ff2e2e;
+  margin: 3px;
+  font-weight: 200;
+}
+
+form .form-conteiner .terms-and-policy {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 10px;
+}
+
+form .form-conteiner .terms-and-policy input[type="checkbox"] {
+  width: 18px;
+}
+
+/*MOBILE VERSION*/
+@media screen and (max-width: 768px) {
+  .phrase {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    margin: 2rem 20px;
+  }
+  .phrase .page-phrase {
+    text-align: left;
+    font-size: 30px;
+    color: #1563f5;
+  }
+  .phrase .page-phrase .highlighted-text {
+    color: #002679;
+  }
+  form {
+    /*FORM CONTEINER*/
+  }
+  form .form-conteiner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: auto 35px;
+    gap: 15px;
+    /*ALL FORM ELEMENTS*/
+    /*TERMS AND POLICY SECTION*/
+  }
+  form .form-conteiner input, form .form-conteiner button {
+    padding: 20px 30px;
+    outline: none;
+  }
+  form .form-conteiner input {
+    border: 2px solid #002679;
+    border-radius: 10px;
+  }
+  form .form-conteiner button {
+    border-radius: 10px;
+    border: 2px solid #0144c2;
+    background-color: #1563f5;
+    font-size: 16px;
+    color: #FFF;
+    cursor: pointer;
+  }
+  form .form-conteiner small {
+    color: #ff2e2e;
+    margin: 3px;
+    font-weight: 200;
+  }
+  form .form-conteiner .terms-and-policy {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 10px;
+  }
+  form .form-conteiner .terms-and-policy input[type="checkbox"] {
+    width: 18px;
+  }
+  form .form-conteiner .terms-and-policy p {
+    color: #242424;
+  }
+  form .form-conteiner .terms-and-policy .highlighted-text {
+    color: #002679;
+  }
+}
+
+/*TABLET VERSION*/
+@media screen and (max-width: 841px) {
+  .phrase {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    margin: 2rem 20px;
+  }
+  .phrase .page-phrase {
+    text-align: left;
+    font-size: 30px;
+    color: #1563f5;
+  }
+  .phrase .page-phrase .highlighted-text {
+    color: #002679;
+  }
+  form {
+    /*FORM CONTEINER*/
+  }
+  form .form-conteiner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: auto 35px;
+    gap: 15px;
+    /*ALL FORM ELEMENTS*/
+    /*TERMS AND POLICY SECTION*/
+  }
+  form .form-conteiner input, form .form-conteiner button {
+    padding: 20px 30px;
+    outline: none;
+  }
+  form .form-conteiner input {
+    border: 2px solid #002679;
+    border-radius: 10px;
+  }
+  form .form-conteiner button {
+    border-radius: 10px;
+    border: 2px solid #0144c2;
+    background-color: #1563f5;
+    font-size: 16px;
+    color: #FFF;
+    cursor: pointer;
+  }
+  form .form-conteiner small {
+    color: #ff2e2e;
+    margin: 3px;
+    font-weight: 200;
+  }
+  form .form-conteiner .terms-and-policy {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 10px;
+  }
+  form .form-conteiner .terms-and-policy input[type="checkbox"] {
+    width: 18px;
+  }
+  form .form-conteiner .terms-and-policy p {
+    color: #242424;
+  }
+  form .form-conteiner .terms-and-policy .highlighted-text {
+    color: #002679;
+  }
+}
+/*# sourceMappingURL=index.css.map */

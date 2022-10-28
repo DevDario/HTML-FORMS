@@ -1,0 +1,327 @@
+/*COLOR VARIABLES*/
+$BodyColor:#111;
+$TextColor:#FFF;
+
+
+/*FUNCTIONS*/
+@mixin Warning-Messages{
+    color:rgb(253, 32, 32);
+    font-weight:200;
+    margin:5px;
+}
+
+@mixin Input-Design{
+    border:3px solid #333;
+    padding:8px 100px;
+    border-radius: 10px;
+    color:#242424;
+    font-weight:300;
+    display:block;
+    margin:0 auto 2rem auto;
+    text-align:initial;
+}
+
+@mixin Label{
+    margin:15px 0 15px 32rem;
+    font-weight:200;
+    color:#999;
+    display:block;
+}
+
+/*RESET*/
+@font-face {
+    font-family: 'Chivo';
+    src: url(chivo-regular.ttf);
+}
+*{
+    padding: 0; margin: 0; left: 0; right: 0; bottom: 0; top: 0; box-sizing: border-box; font-family:'Chivo',monospace;
+}
+
+a{
+    text-decoration: none;
+    color:$TextColor;
+}
+
+/*BODY*/
+body{
+    background:$BodyColor;
+    color:$TextColor;
+}
+
+/*MAIN-IMAGE SECTION*/
+.main-image{
+    display:flex;
+    justify-content: center;
+    margin: 1rem auto 2rem auto;
+
+    .img-box{
+        display:flex;
+        justify-content: center;
+
+        .logo{
+            width: 60px;
+            height: 60px;
+        }
+    }
+}
+
+/*TEXT UNDER LOGO*/
+.md-text {
+    margin-bottom:3rem;
+    .text{
+        font-size:34px;
+        text-align:center;
+        font-weight:400;
+    }
+}
+
+/*FORM*/
+form{
+    display:block;
+    margin:0 auto;
+
+    label{
+        @include Label();
+    }
+
+    /*INPUT*/
+    input{
+        @include Input-Design();
+    }
+
+    /*SMALL*/
+   
+
+    /*BUTTON*/
+    button{
+        display:block;
+        margin:0 auto;
+        @include Input-Design();
+        color:$TextColor;
+        background:#222;
+        cursor:pointer;
+    }
+
+    /*ANOTHER WAY TO SIGN IN SECTION*/
+    .sign-in-options{
+        display:flex;
+        justify-content: center;
+        flex-direction:row;
+
+        .conteiner{
+            display:flex;
+            flex-direction: row;
+            gap:30px;
+
+            /*GOOGLE OPTION*/
+            .google-option{
+                cursor:pointer;
+
+                .google-logo{
+                    width: 44px;
+                    height: 44px;
+                }
+
+                p{
+                    display:flex;
+                    justify-content: center;
+                }
+            }
+
+            /*FACEBOOK OPTION*/
+            .facebook-option{
+                cursor:pointer;
+
+                .facebook-logo{
+                    width: 44px;
+                    height: 44px;
+                }
+
+                p{
+                    display:flex;
+                    margin:auto 0 0 -10px;
+                }
+            }
+
+            /*GITHUB OPTION*/
+            .github-option{
+                cursor:pointer;
+
+                .github-logo{
+                    width: 44px;
+                    height: 44px;
+                }
+
+                p{
+                    display:flex;
+                    margin:auto 0 0 -4px;
+                }
+            }
+        }
+    }
+
+    /*TERMS AND POLICY SECTION*/
+    .terms-and-policy{
+        display:flex;
+        justify-content: center;
+        flex-direction:row;
+        margin:25px auto 20px auto;
+
+        .highlighted-text{
+            color:#dbdbdb;
+            cursor:pointer;
+        }
+    }
+}
+
+/*MOBILE VERSION*/
+@media screen and (max-width:768px){
+    
+    /*FUNCTIONS*/
+    @mixin Input-Design{
+    border:3px solid #333;
+    padding:15px 60px;
+    border-radius: 10px;
+    color:#242424;
+    font-weight:300;
+    display:block;
+    margin:0 auto 1rem 2rem;
+    text-align:initial;
+}
+
+@mixin Label{
+    margin:15px 0 15px 0;
+    font-weight:200;
+    color:#999;
+    display:block;
+}
+
+
+    /*MAIN-IMAGE SECTION*/
+.main-image{
+    display:flex;
+    justify-content: left;
+    margin:2rem 2rem;
+
+    .img-box{
+        display:flex;
+        justify-content: left;
+
+        .logo{
+            width: 60px;
+            height: 60px;
+        }
+    }
+}
+
+/*TEXT UNDER LOGO*/
+.md-text {
+    margin:auto 0 3rem 2rem;
+    .text{
+        font-size:31px;
+        text-align:left;
+        font-weight:400;
+    }
+}
+
+/*FORM*/
+form{
+    display:block;
+    margin:0 auto;
+
+    label{
+        @include Label();
+        margin:15px 0 15px 2rem;
+    }
+
+    /*INPUT*/
+    input{
+        @include Input-Design();
+    }
+
+    /*SMALL*/
+   
+
+    /*BUTTON*/
+    button{
+        display:block;
+        @include Input-Design();
+        color:$TextColor;
+        background:#222;
+        cursor:pointer;
+    }
+
+    /*ANOTHER WAY TO SIGN IN SECTION*/
+    .sign-in-options{
+        display:flex;
+        justify-content: left;
+        margin-left:2rem;
+        flex-direction:row;
+
+        .conteiner{
+            display:flex;
+            flex-direction: row;
+            gap:20px;
+
+            /*GOOGLE OPTION*/
+            .google-option{
+                cursor:pointer;
+
+                .google-logo{
+                    width: 34px;
+                    height: 34px;
+                }
+
+                p{
+                    display:flex;
+                    justify-content: center;
+                    margin-left:-5px;
+                }
+            }
+
+            /*FACEBOOK OPTION*/
+            .facebook-option{
+                cursor:pointer;
+
+                .facebook-logo{
+                    width: 34px;
+                    height: 34px;
+                }
+
+                p{
+                    display:flex;
+                    margin:auto 0 0 -15px;
+                }
+            }
+
+            /*GITHUB OPTION*/
+            .github-option{
+                cursor:pointer;
+
+                .github-logo{
+                    width: 34px;
+                    height: 34px;
+                }
+
+                p{
+                    display:flex;
+                    margin:auto 0 0 -7px;
+                }
+            }
+        }
+    }
+
+    /*TERMS AND POLICY SECTION*/
+    .terms-and-policy{
+        display:flex;
+        justify-content: center;
+        flex-direction:row;
+        margin:25px auto 20px auto;
+
+        .highlighted-text{
+            color:#dbdbdb;
+            cursor:pointer;
+        }
+    }
+}
+}

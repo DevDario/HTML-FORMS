@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <meta name="keywords" content="sign up page, sign up, html, css, javascript, login, forms">
+    <meta name="author" content="Dário Silva">
+    <meta name="description" content="SpaceHub is a version control system that, helps you manage all kinds of projects with more flexibility, fastness and productivity. Sign up to your account and enjoy every aspect in this platform">
+    <link rel="shortcut icon" href="icons-imgs/spacehub-logo-2.ico" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+    <title>SpaceHub</title>
+</head>
+<body>
+    
+    <section class="SpaceHub-logo main-image">
+        <div class="img-box">
+            <img src="icons-imgs/spacehub-logo.ico" alt="SpaceHub logo image" class="logo" id="spacehub-logo">
+        </div>
+    </section>
+
+    <!--SMALL TEXT UNDER SPACEHUB'S LOGO-->
+
+    <section class="md-text">
+        <h1 class="text">login and enjoy every<br> benefits of this platform</h1>
+    </section>
+
+    <!--FORM-->
+
+    <form>
+
+        <!--EMAIL-->
+        <label for="email">type your email</label>
+        <input type="email" name="email" id="email-input" placeholder="email">
+        <small class="warning-message" id="email-warning"></small>
+
+        <!--PASSWORD-->
+        <label for="password">type your password</label>
+        <input type="password" name="password" id="password-input" placeholder="password">
+        <small class="warning-message" id="password-warning"></small>
+
+        <!--SUBMIT FORM-->
+        <button id="btn-submit">sign in</button>
+
+        <!--ANOTHER WAY TO SIGN IN-->
+        <section class="sign-in-options">
+            <div class="conteiner">
+
+                <!--SIGN IN USING GOOGLE ACCOUNT-->
+                <div class="google-option">
+                    <a href="google.com/Oauth?/login" rel="noopener external" target="_blank">
+                        <img src="icons-imgs/google.png" alt="google logo" class="google-logo" id="google-logo">
+                        <p>Google</p>
+                    </a>
+                </div>
+
+                <!--SIGN IN USING FACEBOOK ACCOUNT-->
+                <div class="facebook-option">
+                    <a href="facebook.com/Oauth?/login" rel="noopener external" target="_blank">
+                        <img src="icons-imgs/facebook.png" alt="facebook logo" class="facebook-logo" id="facebook-logo">
+                        <p>Facebook</p>
+                    </a>
+                </div>
+
+                <!--SIGN IN USING GITHUB ACCOUNT-->
+                <div class="github-option">
+                    <a href="github.com/Oauth?/login" rel="noopener external" target="_blank">
+                        <img src="icons-imgs/github.png" alt="github logo" class="github-logo" id="github-logo">
+                        <p>GitHub</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--TERMS AND POLICY-->
+        <section class="terms-and-policy">
+            <p>by signing in you <span class="highlighted-text">agree</span>
+            with<br>our <span class="highlighted-text">terms</span> and <span class="highlighted-text">policy</span>
+            </p>
+        </section>
+    </form>
+
+</body>
+</html>
